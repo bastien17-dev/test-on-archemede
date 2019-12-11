@@ -19,4 +19,4 @@ jobs:
     - name: Verify Host via SSH
       run: ssh-keyscan 163.172.130.135 >> ~/.ssh/known_hosts
     - name: deploy site
-      run: sshpass -p hetic scp -r hetic-w1p2022-01/* paquier-bastien@163.172.130.135:/home/paquier-bastien/site
+      run: sshpass -p hetic scp -r ../hetic-w1p2022-01/* paquier-bastien@163.172.130.135:/home/paquier-bastien/site
